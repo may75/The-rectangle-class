@@ -1,0 +1,42 @@
+# Define rectangle class with width and height arguments
+class rectangle:
+    
+    def __init__(self,width = 1, height = 2):
+        self.width = width
+        self.height = height
+        
+    def get_width(self):
+        return self.width
+    
+    def get_height(self):
+        return self.height
+        
+    # Define the get_perimeter to calculate  the perimeter with the
+    # width and height from the main class
+    def get_perimeter(self):
+        return 2 * (self.width + self.height)
+    # Define the get_area method to calculate the area with
+    # width and heigh from the main calss      
+    def get_area(self):
+        return self.width * self.height
+
+    
+if __name__ == '__main__':
+
+    # Define two object Rectangle1 and rectangle2 forwith different values
+    rectangle1 = rectangle(4, 40)
+    rectangle2 = rectangle(3.5, 35.7)
+    
+    # Prints the width, height, area and perimeter for each object values
+    print("\n** Rectangle 1: ")
+    print("Width of the rectangle: ",rectangle1.get_width())
+    print("Height of the rectangle: ",rectangle1.get_height())
+    print("Area of the rectangle: ",rectangle1.get_area())
+    print("Perimeter of the rectangle: ",rectangle1.get_perimeter())
+    
+    print("\n** Rectangle 2: ")
+    print("Width of the rectangle: ",rectangle2.get_width())
+    print("Height of the rectangle: ",rectangle2.get_height())
+    print("Area of the rectangle: ",rectangle2.get_area())
+    print("Perimeter of the rectangle: ",rectangle2.get_perimeter())
+            
